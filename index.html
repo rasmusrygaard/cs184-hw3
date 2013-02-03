@@ -4,7 +4,7 @@
 </head>
 <body>
     <h1>CS184 HW3</h1>
-    <p>This is my sample style guide.</p>
+    <p>This is my sample style guide, due on <time>February 5, 2013</time></p>
     <hr>
     <h2>Tools to create this site:</h2>
     <ul>
@@ -31,16 +31,47 @@
 
     <p>Because this class is all about the JS, here is your FizzBuzz</p>
     <code>
-      var fizz = function(n) {
-        for (var i = 1; i < n; ++i) {
-	  var by_3 = !(i % 3); var by_5 = !(i % 5);
-	  if (by_3 && by_5) console.log('FizzBuzz');
+      <pre>
+      var fizz = function(n) { 
+        for (var i = 1; i < n; ++i) { 
+	  var by_3 = !(i % 3); var by_5 = !(i % 5); 
+	  if (by_3 && by_5) console.log('FizzBuzz'); 
 	  else if (by_3) console.log('Fizz');
 	  else if (by_5) console.log('Buzz');
-	  else console.log(i);
-	}
+	  else console.log(i); 
+	} 
       }
+      </pre>
     </code>
+
+    <hr />
+
+    <h3>Guest speakers so far:</h3>
+    <table>
+      <thead>
+      <tr>
+	<th>Company</th>
+	<th>Date</th>
+      </tr>
+      </thead>
+      <tbody>
+	<tr>
+	  <td>Heroku</td>
+	  <td>01/31</td>
+	</tr>
+      </tbody>
+    </table>
+    
+    <strong>Request a guest speaker</strong>
+    <form>
+      <input type="text" value="Company name" name="company" /> <br />
+      <strong>Want lunch?</strong> <br />
+      <input type="radio" name="lunch" value="yes">Yes!</input>
+      <input type="radio" name="lunch" value="no">No thanks</input> <br />
+      <input type="submit" value="Send request" />
+    </form>
+
+    <hr />
 
     <footer>
       <p>Some contact info</p>
