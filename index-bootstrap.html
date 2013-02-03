@@ -1,0 +1,83 @@
+<html>
+<head>
+  <title>CS184 HW3</title>
+  <link type="text/css" rel="stylesheet" href="bootstrap/css/boostrap.css" />
+</head>
+<body>
+    <h1>CS184 HW3</h1>
+    <p>This is my sample style guide, due on <time>February 5, 2013</time></p>
+    <hr>
+    <h2>Tools to create this site:</h2>
+    <ul>
+      <li>emacs</li>
+      <li>Apache</li>
+      <li><a href="http://aws.amazon.com">Amazon AWS</a></li>
+    </ul>
+    <p>From least to most painful:</p>
+    <ol>
+      <li>emacs</li>
+      <li>Apache</li>
+      <li>AWS</li>
+    </ol>
+    <h3>Bulletin</h3>
+    <p>Here is the course description:</p>
+    <figure>
+      <img src="https://coursera-course-photos.s3.amazonaws.com/6d/36b377d4ad926485cb6342444f6743/logo.png" alt="Coursera image" />
+      <figcaption>Look, everything is <strong>OK</strong>!</figcaption>
+      <cite><a href="https://www.coursera.org/course/startup">https://www.coursera.org/course/startup</a></cite>
+    </figure>
+    <blockquote>
+      Spiritual sequel to Peter Thiel's CS 183 course on startups. A new course that bridges the gap between academic computer science and production software engineering. Fast-paced introduction to key tools and techniques (command line, dotfiles, text editor, distributed version control, debugging, testing, documentation, reading code, deployments), featuring guest appearances by senior engineers from successful startups and large-scale academic projects including Uber, Square, Stripe, AirBnB, Twilio, Taskrabbit, Judicata, Counsyl, Asana, Heroku, and Twitter. Over the course of the class, students will build a command line application, expose it as a web service, and then link other students' applications and services together to build an HTML5 mobile app. General principles are illustrated through modern Javascript and the latest web technologies, including Node, Backbone, Coffeescript, Bootstrap, Git, and Github. Prerequisites: Basic computer science as per CS 106B. Recommended: some familiarity with HTML, CSS, and Javascript.
+    </blockquote>
+
+    <p>Because this class is all about the JS, here is your FizzBuzz</p>
+    <code>
+      <pre>
+      var fizz = function(n) { 
+        for (var i = 1; i < n; ++i) { 
+	  var by_3 = !(i % 3); var by_5 = !(i % 5); 
+	  if (by_3 && by_5) console.log('FizzBuzz'); 
+	  else if (by_3) console.log('Fizz');
+	  else if (by_5) console.log('Buzz');
+	  else console.log(i); 
+	} 
+      }
+      </pre>
+    </code>
+
+    <hr />
+
+    <h3>Guest speakers so far:</h3>
+    <table>
+      <thead>
+      <tr>
+	<th>Company</th>
+	<th>Date</th>
+      </tr>
+      </thead>
+      <tbody>
+	<tr>
+	  <td>Heroku</td>
+	  <td>01/31</td>
+	</tr>
+      </tbody>
+    </table>
+    
+    <strong>Request a guest speaker</strong>
+    <form>
+      <input type="text" value="Company name" name="company" /> <br />
+      <strong>Want lunch?</strong> <br />
+      <input type="radio" name="lunch" value="yes">Yes!</input>
+      <input type="radio" name="lunch" value="no">No thanks</input> <br />
+      <input type="submit" value="Send request" />
+    </form>
+
+    <hr />
+
+    <footer>
+      <p>Some contact info</p>
+      <address>rygaard AT stanford DOT edu</address>
+    </footer>
+
+</body>
+</html>
